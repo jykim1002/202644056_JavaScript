@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>오늘부터 올해 연말까지 남은 날짜</h3>
+    <script>
+        let today = new Date();
+        let nowYear = today.getFullYear();
+
+        let theDate = new Date(nowYear, 11, 31);
+        let diffDate = theDate.getTime() - today.getTime();
+
+        let result = Math.ceil(diffDate / (60 * 1000 * 60 * 24));
+        document.write(`<h4> D-day: ${result}일 남았습니다. </h4>`);
+    </script>
+</body>
+</html>
