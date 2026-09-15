@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>의사클래스와 의사요소</title>
+    <style>
+        li:first-child {
+            background-color: lightcoral;
+
+        }
+        .item:hover {
+            cursor: pointer;
+            background-color: lightgreen;
+        }
+        li:first-child::first-letter {/* 첫번째 li요소의 첫 글자*/
+            font-size: 200%;
+            color: #ff0000;
+        }
+        .item::after {
+            content : "중요함!!!";
+            color : magenta;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>목록#1</li>
+        <li>목록#2</li>
+        <li class="item">목록#3</li>
+    </ul>
+</body>
+</html>
