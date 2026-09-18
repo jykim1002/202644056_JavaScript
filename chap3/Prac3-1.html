@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>연습 3-1</title>
+</head>
+<body>
+    <h3>마우스를 올려보세요</h3>
+    <hr>
+
+    <img src="media/apple.png" alt="과일이미지">
+
+    <script>
+        //첫 번째 img 요소를 선택
+        const image = document.querySelector("img");
+
+        //이미지에 마우스를 올리면 바나나 이미지로 변경
+        image.addEventListener("mouseover",function(){
+            image.src="media/banana.png";
+        })
+
+        //이미지에서 마우스가 벗어나면 사과 이미지로 변경
+        image.addEventListener("mouseout",function(){
+            image.src='media/apple.png';
+        })
+    </script>
+</body>
+</html>
