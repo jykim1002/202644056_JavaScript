@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function sumEventNumbers(start, end, callback) {
+        let sum = 0;
+        for (let i=start; i<=end; i++) {
+            if(i%2==0) {
+                sum += i;
+            }
+        }
+        callback(sum);
+    }
+    sumEventNumbers(1, 100, function (result) {
+        document.write(`<h3>1부터 100까지 홀수의 수의 합은: ${result} </h3>`);
+    });
+</script>
+<body>
+</body>
+</html>
