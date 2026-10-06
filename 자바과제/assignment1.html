@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    p {
+        margin: auto 0px;
+    }
+    form {
+        border: 1px solid black;
+        width: 500px;
+        padding: 10px;
+    }
+    #name, #email {
+        width: 300px;
+        padding: 5px;
+    }
+    button {
+        width: 15px;
+        padding: 3px;
+        border-color: white;
+        border-radius: 35%;
+        background-color: blue;
+        color: white;
+    }
+</style>
+</head>
+<body>
+<h3>메세지 전송 -> 확인</h3>
+<hr>
+<form>
+    <header>보낼 내용 입력</header>
+    <section>
+        <p>이름</p><br>
+        <input id="name" type="text" placeholder="이름을 입력하세요"><br>
+        <p>이메일</p><br>
+        <input id="email" type="text" placeholder="이메일을 입력하세요"><br>
+        <p>전달한 내용</p><br>
+        <textarea id="formal" type="text"></textarea><br>
+        <button type="submit">제출</button>
+    </section>
+</form>
+</body>
+</html>
